@@ -1,2 +1,1 @@
-# english
-English version of Data + Design
+# datadesignfrench.github.io
