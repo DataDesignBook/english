@@ -11,7 +11,7 @@ document.write('\
       <nav data-type="toc">\
         <ol>\
           <li data-type="part">\
-            <a href="../index.html">Introduction</a>\
+            <a href="index.html">Introduction</a>\
             <ol>\
               <li data-type="copyright-page">\
                 <a href="License.html">License</a>\
