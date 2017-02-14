@@ -1,6 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <script src="../english/js/htmlHead.js"></script>
+
+  <body data-type="book">
+    <script src="../english/js/htmlNavigation.js"></script>
+    <div class="navigation">
+      <ul>
+        <li id="previous_page">
+          <a href="GettingReady.html">Previous</a>
+        </li>
+        <li id="next_page">
+          <a href="DataChecks.html">Next</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
 <section class="violet" data-type="chapter">
 <header>
-  <div class="icon"><img src="../images/sections/04/cleaning.png" /></div>
+  <div class="icon"><img src="../english/images/sections/DataCleaning-icon-soap.png" /></div>
   <p>Chapter 8</p>
   <h1>Data Cleaning</h1>
   <p data-type="author">By Marit Brademann and Dyanna Gregory</p>
@@ -9,7 +29,7 @@
 <section data-type="sect1">
 <p>Now that you have a prepped dataset, you&rsquo;re ready to get it clean. What does that mean though? What exactly are clean data and what do we have to do get them that way?</p>
 
-<p>Well, when we clean data, we&rsquo;re going through and identifying incorrect information &mdash; wrong numbers, misspellings, etc. &mdash; and deciding whether to correct them (if they are correctable) or to remove them altogether. Like in data preparation, many <a class="glossterm" target="_blank" href="glossary01.html#cleaning-data">data cleaning</a> tasks are a combination of computerized tasks and manual work, since it is important for you to review the potential errors the computer identifies to see if they are, in fact, errors. Some of the items your computer flags as problems may turn out to just be extreme observations so it&rsquo;s critical that you remain involved in the process. Don&rsquo;t just automate it all or you risk the possibility of deleting valid data! </p>
+<p>Well, when we clean data, we&rsquo;re going through and identifying incorrect information &mdash; wrong numbers, misspellings, etc. &mdash; and deciding whether to correct them (if they are correctable) or to remove them altogether. Like in data preparation, many <a class="glossterm" target="_blank" href="glossary.html#cleaning-data">data cleaning</a> tasks are a combination of computerized tasks and manual work, since it is important for you to review the potential errors the computer identifies to see if they are, in fact, errors. Some of the items your computer flags as problems may turn out to just be extreme observations so it&rsquo;s critical that you remain involved in the process. Don&rsquo;t just automate it all or you risk the possibility of deleting valid data! </p>
 
 <h2>So What Do We Do?</h2>
 
@@ -17,7 +37,7 @@
 
 <h2>Range Checks</h2>
 
-<p><a class="glossterm" target="_blank" href="glossary01.html#check-range">Range checks</a> are a very straightforward procedure that we use on numeric fields to see if any values in the dataset are above or below the most extreme acceptable values for that variable. Let&rsquo;s use an example of homework scores. Pretend that you&rsquo;re a college professor and your teaching assistants entered the first set of homework scores for the semester. You want to make sure they entered everything correctly, so you go into the dataset and sort by the column that contains the scores for the first homework, graded on a scale of 0-100. You see the first few rows:</p>
+<p><a class="glossterm" target="_blank" href="glossary.html#check-range">Range checks</a> are a very straightforward procedure that we use on numeric fields to see if any values in the dataset are above or below the most extreme acceptable values for that variable. Let&rsquo;s use an example of homework scores. Pretend that you&rsquo;re a college professor and your teaching assistants entered the first set of homework scores for the semester. You want to make sure they entered everything correctly, so you go into the dataset and sort by the column that contains the scores for the first homework, graded on a scale of 0-100. You see the first few rows:</p>
 
 <table>
 	<tbody>
@@ -78,7 +98,7 @@
 
 <div data-type="warning"><p>Range checks will work no matter what your range is. Maybe you&rsquo;re expecting a decimal between 0 and 1, or your variable is normal body temperature in Fahrenheit so you&rsquo;re expecting mostly values between 97.0 and 99.0, allowing for people that run cold and hot. You can always look and see if there are values stored in that variable group that are too low or high.</p></div>
 
-<p>You can also use &ldquo;Filter&rdquo; commands to check for all values that are outside the acceptable range of a variable. However, this doesn&rsquo;t catch values that are inside your range but that look &ldquo;off&rdquo; based on the rest of your data. Here, a basic range <a class="glossterm" target="_blank" href="glossary01.html#filter ">filter</a> would detect the &ldquo;980&rdquo; score but not the &ldquo;9&rdquo; score. If you use filtering to do your range checks, it is a good idea to also use another method to look at the overall distribution of your data to catch any values that might seem &ldquo;strange&rdquo; in comparison to your other values.</p>
+<p>You can also use &ldquo;Filter&rdquo; commands to check for all values that are outside the acceptable range of a variable. However, this doesn&rsquo;t catch values that are inside your range but that look &ldquo;off&rdquo; based on the rest of your data. Here, a basic range <a class="glossterm" target="_blank" href="glossary.html#filter ">filter</a> would detect the &ldquo;980&rdquo; score but not the &ldquo;9&rdquo; score. If you use filtering to do your range checks, it is a good idea to also use another method to look at the overall distribution of your data to catch any values that might seem &ldquo;strange&rdquo; in comparison to your other values.</p>
 
 <h2>Spell Check</h2>
 
@@ -86,7 +106,7 @@
 
 <h2>Pattern Matching/Regular Expressions</h2>
 
-<p>Another slightly more advanced type of data check involves <a class="glossterm" target="_blank" href="glossary01.html#matching-pattern">pattern matching</a>. This is the sort of check that you can use, for example, to make sure all the entries in a field are an email address. This involves something called regular expressions (often shortened to regex), which give you a way of telling the computer, &ldquo;I only want things that look like {this} to be stored in that variable. Tell me if something in there doesn&rsquo;t look like {this}.&rdquo; The way that you indicate what {this} should be varies from program to program and can look a little complicated if you&rsquo;ve never worked with it before. If you have ever used an asterisk (*) as a wildcard for searching, that&rsquo;s actually part of a regex expression, so you already know a piece of it! </p>
+<p>Another slightly more advanced type of data check involves <a class="glossterm" target="_blank" href="glossary.html#matching-pattern">pattern matching</a>. This is the sort of check that you can use, for example, to make sure all the entries in a field are an email address. This involves something called regular expressions (often shortened to regex), which give you a way of telling the computer, &ldquo;I only want things that look like {this} to be stored in that variable. Tell me if something in there doesn&rsquo;t look like {this}.&rdquo; The way that you indicate what {this} should be varies from program to program and can look a little complicated if you&rsquo;ve never worked with it before. If you have ever used an asterisk (*) as a wildcard for searching, that&rsquo;s actually part of a regex expression, so you already know a piece of it! </p>
 
 <p>There are also pattern matching options in Excel and some advanced filter options that sometimes work even better. Check the <a href="app01.html" target="_blank">resources section</a> for links to more on regex and Excel filters and pattern matching.</p>
 

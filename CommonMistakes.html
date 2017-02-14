@@ -1,6 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <script src="../english/js/htmlHead.js"></script>
+
+  <body data-type="book">
+    <script src="../english/js/htmlNavigation.js"></script>
+    <div class="navigation">
+      <ul>
+        <li id="previous_page">
+          <a href="Perception.html">Previous</a>
+        </li>
+        <li id="next_page">
+          <a href="resources.html">Next</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
 <section class="violet" data-type="chapter">
 <header>
-  <div class="icon"><img src="../images/sections/06/mistakes.png" /></div>
+  <div class="icon"><img src="../english/images/sections/CommonMistakes-icon-banana.png" /></div>
   <p>Chapter 18</p>
   <h1>Common Visualization Mistakes</h1>
   <p data-type="author">By Kathy Chang, Kate Eyler-Werve, and Alberto Cairo</p>
@@ -14,17 +34,17 @@
 
 <p>Sometimes a distortion like this is really obvious. For example, let&rsquo;s say there are two allergy medicines called Happajoy and Pollaway. The bar graph below compares how effective these two medicines are at reducing the tearful, congested misery known as allergy symptoms. If you quickly glance at the bars, you may think that Happajoy is twice as effective as Pollaway is because its bar is twice as tall. But if you examine the graph more closely, you&rsquo;ll see that the y-axis is truncated, starting from 30.2 and going up to only 30.7 percent. The truncated y-axis makes the difference between the two bars look artificially high. In reality, Happajoy&rsquo;s effectiveness is only 0.2% higher than Pollaway&rsquo;s, which is not as impressive as the results implied by the bar graph. </p>
 
-<figure><img alt="Effectiveness of allergy medications" src="../images/sections/06/21-01_truncated-y-axis.png" /></figure>
+<figure><img alt="Effectiveness of allergy medications" src="../english/images/sections/CommonMistakes-truncated-y-axis-bar.png" /></figure>
 
 <p>Sometimes a truncated axis and the resulting distortion can be more subtle. For example, the next graph shows the quantity of Happajoy sold from January through April 2014. </p>
 
-<figure><img alt="Truncated x-axis" src="../images/sections/06/21-02_truncated-x-axis.png" /></figure>
+<figure><img alt="Truncated x-axis" src="../english/images/sections/CommonMistakes-truncated-x-axis-line.png" /></figure>
 
 <p>At first glance, there doesn&rsquo;t appear to be a truncation issue here. The y-axis starts at zero, so that&rsquo;s not a problem.  The critical thing to understand is that it&rsquo;s the x-axis that&rsquo;s been truncated this time: we&rsquo;re seeing sales from less than half the year. Truncating a time period like this can give the wrong impression, especially for things that go through cycles. And&mdash;you guessed it&mdash;the sale of allergy medicine goes through a seasonal cycle since allergy symptoms are typically higher in the spring and lower in the winter.</p>
 
 <p>What would be a better way to show sales of Happajoy? Something like the graph below:</p>
 
-<figure><img alt="Proportional axes" src="../images/sections/06/21-03_proportional-axes.png" /></figure>
+<figure><img alt="Proportional axes" src="../english/images/sections/CommonMistakes-proportional-axes-line.png" /></figure>
 
 <p>This graph shows the same dataset of Happajoy sales, except this time the y-axis is proportional and the x-axis covers two full years instead of just a few months. We can clearly see that sales of Happajoy went down in the winter and up in the spring, but that the rate of sales didn&rsquo;t change much from year to year. In fact, sales were a little lower in 2014 than in 2013.</p>
 
@@ -42,11 +62,11 @@
 
 <p>This is easier said than done. For example, the map below shows each state&rsquo;s market leader in allergy medicine: Happajoy is the leader in dark blue states, while Pollaway is the leader in light blue states. On the surface, it might seem like Happajoy is the market leader nationally, ahead of Pollaway. But to get the complete picture you have to pay attention to other variables.</p>
 
-<figure><img alt="State leader" src="../images/sections/06/21-04_state-leader.png" /></figure>
+<figure><img alt="State leader" src="../english/images/sections/CommonMistakes-market-leader-map.png" /></figure>
 
 <p>For example, the bar graph below shows a breakdown of market share in each state. (We&rsquo;re only going to look at the western continental states for now.) &nbsp;The margins by which Happajoy leads are significantly less than the margins by which Pollaway leads.</p>
 
-<figure><img alt="Market share" src="../images/sections/06/21-05_market-share.png" /></figure>
+<figure><img alt="Market share" src="../english/images/sections/CommonMistakes-market-share-bar.png" /></figure>
 
 <p>Combine the information from the bar graph with the table below. The total sales in states where Happajoy is the leader is also significantly less than the total sales in states where Pollaway is the leader. When you add up the numbers, Pollaway&rsquo;s total sales are more than twice that of Happajoy&rsquo;s. Assuming that a similar pattern holds for the rest of the country, would it still be accurate to say that Happajoy is the national market leader in allergy medicine?</p>
 
@@ -156,7 +176,7 @@
 
 <p>For example, let&rsquo;s say you&rsquo;re an investor of RediMedico, the maker of Happajoy, and you attend the annual sales meeting. The CEO of RediMedico starts off the presentation with the following graphic:</p>
 
-<figure><img alt="Oversimplify arrow" src="../images/sections/06/21-07_oversimplify-arrow.png" /></figure>
+<figure><img alt="Oversimplify arrow" src="../english/images/sections/CommonMistakes-oversimplified-revenue-arrow.png" /></figure>
 
 <p>Now the investor in you might look at that graphic and start daydreaming about all the wonderful things you&rsquo;ll do with such a great return on your investment. But then the data pro in you kicks in, and you start wondering about what that 18% increase means. You ask yourself:</p>
 
@@ -168,7 +188,7 @@
 
 <p>These are all worthwhile questions to answer with a visualization! Thankfully, the CEO of RediMedico agrees and presents the next graphic, which compares the revenues from the five top-selling medicines RediMedico makes:</p>
 
-<figure><img alt="Oversimplify compare" src="../images/sections/06/21-08_oversimplify-compare.png" /></figure>
+<figure><img alt="Oversimplify compare" src="../english/images/sections/CommonMistakes-detailed-revenue-bar.png" /></figure>
 
 <p>If we do some number-crunching, we&nbsp;see that the average increase in revenue between 2013 and 2014 is indeed 18%. However, we also see that this increase is primarily due to a whopping 225% increase in revenue from a single medicine, Exoalgio. Revenue from 3 out of 5 medicines actually dropped. So RediMedico&rsquo;s first graphic tells part of the truth, while the second graphic tells the whole truth by presenting the details behind the single number.&nbsp;</p>
 
@@ -182,17 +202,17 @@
 
 <p>Since we&rsquo;ve already looked at examples of bar graphs and line graphs in this chapter, let&rsquo;s take a look at a couple graphics that use area and shading.</p>
 
-<figure><img alt="Bubbles" src="../images/sections/06/21-09_bubbles.png" /></figure>
+<figure><img alt="Bubbles" src="../english/images/sections/CommonMistakes-market-leader-bubble.png" /></figure>
 
 <p>The bubble graphic uses area to display the units sold of the top selling allergy medicine in some states. Based on bubble size, you can generally tell that more Happajoy was sold in Arizona than in New Mexico. But can you tell by how much? Is the Arizona bubble three times bigger than the New Mexico bubble? Four times? It&rsquo;s hard to tell. It&rsquo;s even harder to tell when the bubble sizes are closer together: Did Utah or Kansas sell more Happajoy?</p>
 
 <p>We run into the same problem with the next graphic, which uses shading to represent Happajoy sales: California is definitely darker than Texas, but how much darker? Two times? Three times? Who knows? This is why area and shading are better for giving an overall picture instead of making precise comparisons.</p>
 
-<figure><img alt="Shading" src="../images/sections/06/21-10_shading.png" /></figure>
+<figure><img alt="Shading" src="../english/images/sections/CommonMistakes-market-leader-shade-map.png" /></figure>
 
 <p>In addition to area and shading, angles also give us a tough time when it comes to making accurate estimates. This is why it&rsquo;s so hard to compare two pie charts, as in the example below.</p>
 
-<figure><img alt="Pie charts" src="../images/sections/06/21-11_pie-charts.png" /></figure>
+<figure><img alt="Pie charts" src="../english/images/sections/CommonMistakes-revenue-comparison-pie.png" /></figure>
 
 <p>It&rsquo;s already hard to precisely compare the slices within the <em>same</em> pie chart. It&rsquo;s even harder to compare slices across different pie charts. If the goal of this graphic is to help readers compare revenues from one year to the next, then something like a bar chart would have been a better choice.</p>
 
@@ -206,15 +226,15 @@
 
 <p>Let&rsquo;s start with the big picture. Remember how graphic forms that use area or shading are best at giving a general overview? For every year that Happajoy has been on the market, a map that uses shading to represent sales can give people a general sense of how sales have changed across time and location:</p>
 
-<figure><img alt="Shade animation" src="../images/sections/06/21-12_shade-animation.gif" /></figure>
+<figure><img alt="Shade animation" src="../english/images/sections/CommonMistakes-animated-shade-map.gif" /></figure>
 
 <p>Now let&rsquo;s move on the small picture. Let&rsquo;s say RediMedico started to advertise heavily in California and New York a few years ago, and the investors are wondering how sales in those states are doing. Using the same dataset, you can give a more detailed picture of the sales in one state:</p>
 
-<figure><img alt="Single line" src="../images/sections/06/21-13_single-line.png" /></figure>
+<figure><img alt="Single line" src="../english/images/sections/CommonMistakes-revenue-single-line.png" /></figure>
 
 <p>Or you can compare the sales between different states:</p>
 
-<figure><img alt="Double line" src="../images/sections/06/21-14_double-line.png" /></figure>
+<figure><img alt="Double line" src="../english/images/sections/CommonMistakes-revenue-double-line.png" /></figure>
 
 <p>See? Same data, different presentations. So if you want to show your readers different sides of the same story, give them multiple graphic forms.</p>
 
@@ -224,11 +244,11 @@
 
 <p>For example, let&rsquo;s go back Happajoy sales. If you see a graphic like the following:</p>
 
-<figure><img alt="Unannotated" src="../images/sections/06/21-16_unannotated.png" /></figure>
+<figure><img alt="Unannotated" src="../english/images/sections/CommonMistakes-revenue-unannotated-line.png" /></figure>
 
 <p>Then you might be wondering what happened between 2009 and 2010. Why was there such a sharp drop in revenue? In this case, it would be helpful to add some text:</p>
 
-<figure><img alt="Annotated" src="../images/sections/06/21-17_annotated.png" /></figure>
+<figure><img alt="Annotated" src="../english/images/sections/CommonMistakes-revenue-annotated-line.png" /></figure>
 
 <p>So whenever you create a visualization, think about the &ldquo;So what?&rdquo; of your graphic: Why should people care about the information you&rsquo;re presenting? Add annotations to help them understand why they should care. Write a good headline that catches their attention, a good introduction that highlights interesting data points, and a good narrative that structures your visualization logically. Good writing is an important part of good visualizations.</p>
 
